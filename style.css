@@ -1,0 +1,152 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+.clear {
+    clear: both;
+}
+  
+/******************************************
+/* BASE STYLES
+/*******************************************/
+  
+html, body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(180deg,#EEBAB2 0%,#E3C2AB 16%,#DBC7A7 30%, #CFD09F 50%,#C5D799 75%,#C0DA97 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+/* .main-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+} */
+/* 
+img{
+    display: flex;
+    width: 343px;
+    height: 134.02px;
+    left: 16px;
+    top: 339px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.start-btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.start-btn{
+    padding: 14px 152px;
+    width: 354px;
+    height: 51px;
+    left: 10px;
+    top: 594px;
+    background: #F99B8D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;  
+    color: black;
+    text-decoration-line: none;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+} */
+
+
+
+#mainContent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#logoButtonContainer{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.img{
+    display: flex;
+    background-image: url('/images/home-logo.png');
+    width: 343px;
+    height: 134.02px;
+    left: 16px;
+    top: 339px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+#orderButtonContainer{
+    display: flex;
+}
+
+.orderButton{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px 152px;
+    width: 354px;
+    height: 51px;
+    left: 10px;
+    top: 594px;
+    background: #F99B8D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;  
+}
+
+a.orderButton{
+    width: 100%;
+}
+
+
+
+a.orderButton{
+    width: 100%;
+}
+
+#startTag{
+    color: black;
+    text-decoration-line: none;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform:uppercase;  
+}
+
