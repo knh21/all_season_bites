@@ -1,0 +1,64 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+.clear {
+    clear: both;
+}
+/* CUSTOM STYLES */
+
+
+ body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:#F5F3E7;
+}
+  
+h1 {
+    text-align: center;
+}
+  
+h2 {
+    text-align: center;
+}
+  
+.cupcakes, .bites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 343px;
+    height: 51px;
+    background: #F99B8D;
+    border-radius: 100px;
+    margin: 14px 0;
+    cursor: pointer;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+    
+@media screen and (max-width: 768px) {
+    .cupcakes, .bites {
+    width: 100%;
+    }
+}
+
+

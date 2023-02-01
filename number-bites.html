@@ -10,7 +10,7 @@
 
 		<!-- external CSS link -->
 		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
-		<link rel="stylesheet" href="css/bites-select.css">
+		<link rel="stylesheet" href="css/number-bites.css">
 	</head>
 	<body>
         
@@ -20,14 +20,17 @@
         
         <main>
         <div>
-        <h2 class="bitetype">Which bite would you like?</h2>
+        <h2 class="bitetype">How many bites would you like?</h2>
         </div>
-        <div id="imgcontainer">
-        <div>
-        <a href="/number-bites.html"><button class="bites"><strong>Mini Cheesecake</strong></button></a>
+        
+        <form action="#" method="post">
+            <label for="bites">Select bites</label>
+            <select id="bites" name="bites">
+              <option value="bites">1 Dozen</option>
+            </select>
+        </form>
 
-        <a href="/number-bites.html"><button class="cupcakes"><strong>Cupcakes</strong></button></a>
-        </div>
+        <a href="/number-bites.html"><button class="bites-btn"><strong>Next</strong></button></a>
         </main>
     </div>  
 
