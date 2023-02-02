@@ -1,0 +1,208 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+/* CUSTOM STYLES */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background:#F5F3E7;
+}
+
+
+.flavours-title-container .flavours-title{
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.flavours-title-container  .flavours-title-note p{
+ font-size: 15px;
+ display: block;
+ padding: 0px 16px;
+ font-family: Avenir;
+ font-style: normal;
+ font-weight: normal;
+ line-height: 150%;
+}
+
+.flavours-title-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  margin: 0px auto;
+}
+
+.flavours-title-instruction{
+  margin: 2vh auto;
+}
+
+.flavours-title-instruction p{
+  font-family: Avenir;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.flavours-title-note{
+  margin: 2vh auto;
+}
+
+#flavourOptions{
+   width: 100%;
+   height: 100%;
+}
+
+.regularWrapper{
+  width: 100%;
+  margin: 2vh auto;
+}
+
+.top-section{
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.bottom-section{
+  display: grid;
+  grid-auto-flow: column;
+  margin: 40px auto 0px auto;
+  width: 70%;
+  padding: 0;
+}
+
+.regularBox{
+  max-width: 95px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.item-price{
+  font-size: 10px;
+  line-height: 13px;
+  color: #000000;
+  text-align: center;
+}
+
+.gourmetWrapper{
+  width: 100%;
+  margin: 4vh auto;
+}
+
+.gourmetPrice{
+  margin-bottom: 10px;
+  text-align: center;
+}
+  
+.regularBox > img{
+ object-fit: cover;
+ width: 95px;
+ height: 95px;
+ border-radius: 10px;
+ cursor: pointer;
+ margin: 0 auto;
+}
+
+.regularBox > img:active {
+      opacity: .7;
+      background: #C4C4C499;
+      filter: grayscale(100%);
+ }
+
+.chosenFlavour{
+ filter: grayscale(100%) contrast(50%); 
+}   
+
+.gourmetBox{
+  max-width: 95px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+}
+
+.gourmetBox > img{
+  object-fit: cover;
+ width: 95px;
+ height: 95px;
+ border-radius: 10px;
+ cursor: pointer;
+ margin: 0 auto;
+}
+
+.next-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 343px;
+  height: 51px;
+  background: #F99B8D;
+  border-radius: 100px;
+  margin: 14px 0;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 950px) {
+  .flavours-title-container .flavours-title{
+    font-size: 30px;
+    line-height: 31px;
+  }
+  .flavours-title-container  .flavours-title-note p{
+    font-size: 13px;
+    padding: 0px 10px;
+  }
+  .flavours-title-instruction p{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .regularBox, .gourmetBox{
+    max-width: 70px;
+    width: 70px;
+  }
+  .regularBox > img, .gourmetBox > img{
+    width: 70px;
+    height: 70px;
+  }
+  .bottom-section{
+    width: 90%;
+  }
+  .next-btn{
+    width: 300px;
+    height: 44px;
+  }
+}
+
+
