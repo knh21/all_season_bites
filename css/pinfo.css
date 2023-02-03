@@ -1,0 +1,85 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+.clear {
+    clear: both;
+}
+/* CUSTOM STYLES */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:#F5F3E7;
+}
+
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.contact-form input[type="text"], 
+.contact-form input[type="email"], 
+.contact-form input[type="tel"], 
+.contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+
+.next-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 343px;
+    height: 51px;
+    background: #F99B8D;
+    border-radius: 100px;
+    margin: 14px 0;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+form select {
+    width: 50%;
+    height: 50px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #424738;
+}
+
+label {
+    font-size:larger
+}

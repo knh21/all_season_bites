@@ -1,0 +1,52 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+.clear {
+    clear: both;
+}
+/* CUSTOM STYLES */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg,#EEBAB2 0%,#E3C2AB 16%,#DBC7A7 30%, #CFD09F 50%,#C5D799 75%,#C0DA97 100%);
+    background-repeat: no-repeat;
+}
+
+#logoButtonContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.img{
+    background-image: url('/images/home-logo.png');
+    width: 343px;
+    height: 134.02px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+h1, p, h4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
