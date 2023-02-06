@@ -98,7 +98,7 @@ label {
 .contact-form input[type="city"],
 .contact-form input[type="code"], 
 .contact-form textarea {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     background-color: #fff;
     margin-bottom: 20px;
