@@ -155,7 +155,7 @@ body {
 }
 
 .gourmetBox > img{
-  object-fit: cover;
+ object-fit: cover;
  width: 95px;
  height: 95px;
  border-radius: 10px;
@@ -174,6 +174,12 @@ body {
   margin: 14px 0;
   cursor: pointer;
 }
+
+
+a{
+  text-decoration: none;
+}
+
 
 @media only screen and (min-width: 350px) and (max-width: 950px) {
   .flavours-title-container .flavours-title{
@@ -202,6 +208,14 @@ body {
   .next-btn{
     width: 300px;
     height: 44px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  strong{
+    color:black;
   }
 }
 
