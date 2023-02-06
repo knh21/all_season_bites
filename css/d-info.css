@@ -88,36 +88,39 @@ label {
 }
 
 
+
+    
+ 
 @media only screen and (min-width: 350px) and (max-width: 950px) {
     
+    .contact-form {
+        width: 90%;
+    }
     
-.contact-form input[type="text"], 
-.contact-form input[type="email"], 
-.contact-form input[type="tel"],
-.contact-form input[type="address"],
-.contact-form input[type="city"],
-.contact-form input[type="code"], 
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    background-color: #fff;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-}
-
-
-
-
-
-
-
-a{
-      text-decoration: none;
-}
-  
-strong{
-      color:black;
-}
-
-
-}
+    .next-btn{
+        width: 90%;
+    }
+    
+    .contact-form input[type="text"], 
+    .contact-form input[type="email"], 
+    .contact-form input[type="tel"],
+    .contact-form input[type="address"],
+    .contact-form input[type="city"],
+    .contact-form input[type="code"], 
+    .contact-form textarea {
+        font-size: 14px;
+    }
+    
+    label {
+        font-size: larger;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    strong{
+        color: black;
+    }
+    
+    }
