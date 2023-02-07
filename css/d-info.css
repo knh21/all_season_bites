@@ -58,7 +58,7 @@ body {
 
 
 .next-btn{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     width: 343px;
