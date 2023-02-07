@@ -46,7 +46,7 @@ body {
 .contact-form input[type="email"], 
 .contact-form input[type="tel"], 
 .contact-form textarea {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     background-color: #fff;
     margin-bottom: 20px;
@@ -72,7 +72,7 @@ a{
 
 
 form select {
-    width: 50%;
+    width: 100%;
     height: 50px;
     padding: 8px;
     font-size: 16px;
@@ -83,3 +83,35 @@ form select {
 label {
     font-size:larger
 }
+
+
+@media only screen and (min-width: 350px) and (max-width: 950px) {
+    
+    .contact-form {
+        width: 90%;
+    }
+    
+  
+    .contact-form input[type="text"], 
+    .contact-form input[type="email"], 
+    .contact-form input[type="tel"],
+    .contact-form input[type="address"],
+    .contact-form input[type="city"],
+    .contact-form input[type="code"], 
+    .contact-form textarea {
+        font-size: 14px;
+    }
+    
+    label {
+        font-size: larger;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    strong{
+        color: black;
+    }
+    
+    }
